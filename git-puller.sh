@@ -24,7 +24,7 @@ cat >server.sh <<GIT
 mkdir -p $WORKDIR
 cd $WORKDIR
 git init
-git pull $WORKDIR
+git pull $MASTER
 exit
 GIT
 
