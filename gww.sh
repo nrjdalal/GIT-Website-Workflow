@@ -59,8 +59,10 @@ echo
 ssh -p $PORT $USERNAME@$HOSTNAME "bash -s" <server.sh
 rm server.sh
 
+echo
 echo "To add remote, please specify remote name as -"
 echo "$(tput setaf 3)REMOTENAME=$(tput sgr0)"
+echo
 echo "After that run -"
-echo $(tput setaf 6)'git remote add $REMOTENAME ssh://$USERNAME@$HOSTNAME:$PORT/$WORKDIR/.bareGit'$(tput sgr0)
+echo "$(tput setaf 6)git remote add \$REMOTENAME ssh://$USERNAME@$HOSTNAME:$PORT/$WORKDIR/.bareGit$(tput sgr0)"
 echo
